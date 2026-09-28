@@ -1,0 +1,17 @@
+# samples never go in the repo
+samples/
+*.exe
+*.dll
+*.bin
+*.zip
+*.rar
+*.7z
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# local output
+results*.jsonl
+candidates*.csv
