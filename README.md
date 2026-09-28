@@ -12,7 +12,7 @@ Reports:
 |---|---|
 | `tools/xworm_extractor/` | Static config extractor, tested on 9 payloads from V3.0 to V7.4 |
 | `tools/mb_search.py` | Finds likely-unpacked XWorm payloads on MalwareBazaar |
-| `detections/xworm.yar` | Three YARA rules: family, campaign payload, campaign loader |
+| `detections/xworm.yar` | Three YARA rules: family, campaign payload, campaign loader. Maintained in [yara-rules](https://github.com/ArtfulDodger10/yara-rules/tree/main/rules/xworm) |
 | `iocs/iocs.csv` | IOCs from both reports |
 | `attack/xworm_layer.json` | ATT&CK Navigator layer for the V7.1 campaign |
 | `reports/` | PDF copies of the reports |
@@ -57,6 +57,8 @@ python xworm_extractor.py path/to/payload.exe
 ```
 
 ## Detection results
+
+The rules are maintained in [yara-rules](https://github.com/ArtfulDodger10/yara-rules), together with rules for other families, a scanner and false-positive tests on 145,661 clean files. The copy here matches the version the results below were produced with.
 
 Scanned with `yara64` against the 9 payloads, the loaders from the same sample set, and `C:\Windows\System32`.
 
