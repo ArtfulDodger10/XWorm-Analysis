@@ -11,7 +11,7 @@ XWorm encrypts each setting with AES-256-ECB. The key is derived from the mutex:
 Field names are usually obfuscated, so the mutex is found by trying every string
 in the #US heap as the key and keeping the one that decrypts the most settings.
 
-Nader Ayman (Artful Dodger) - https://artfuldodger10.github.io - MIT License
+Artful Dodger - https://artfuldodger10.github.io - MIT License
 """
 from __future__ import annotations
 

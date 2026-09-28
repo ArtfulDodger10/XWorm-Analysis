@@ -14,7 +14,7 @@ rule XWorm_Payload_Generic
 {
     meta:
         description = "XWorm .NET payload, matched on the C2 command names in the #US heap"
-        author      = "Nader Ayman (Artful Dodger)"
+        author      = "Artful Dodger"
         date        = "2026-09-28"
         family      = "XWorm"
         reference   = "https://artfuldodger10.github.io/posts/Xworm-Analysis/"

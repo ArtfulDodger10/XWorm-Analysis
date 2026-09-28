@@ -13,7 +13,7 @@ The abuse.ch key is read from the ABUSE_CH_KEY environment variable.
 
 Downloads are MalwareBazaar's encrypted ZIPs (password: infected). Run them in a VM.
 
-Nader Ayman (Artful Dodger) - MIT License
+Artful Dodger - MIT License
 """
 from __future__ import annotations
 
