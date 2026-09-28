@@ -1,0 +1,30 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  extractor:
+    # windows runner so the end-to-end tests can use csc.exe
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r tools/xworm_extractor/requirements.txt
+      - run: python -m unittest discover -s tests -v
+        working-directory: tools/xworm_extractor
+      - run: python -m py_compile tools/mb_search.py
+
+  yara:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y yara
+      - name: Compile rules
+        run: |
+          for f in detections/*.yar; do
+            yarac "$f" /tmp/compiled.bin && echo "$f ok"
+          done
