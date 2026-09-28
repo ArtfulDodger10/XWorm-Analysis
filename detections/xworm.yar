@@ -1,6 +1,6 @@
 /*
     XWorm detections
-    Nader Ayman (Artful Dodger)
+    Artful Dodger
     https://artfuldodger10.github.io/posts/Xworm-Analysis/
 
     XWorm_Payload_Generic             family rule, any build
