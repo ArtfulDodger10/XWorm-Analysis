@@ -1,0 +1,15 @@
+type,value,description,campaign,report
+sha256,8f6b44db0884d056ba1ea591679fa5ce6cdebb53c4ee6e925e21400ff6d3535e,RAR phishing attachment,phishing-to-xworm-v7.1,Xworm-Analysis
+sha256,81f93dc173ad6b2d7592447c7910f70df668b1a06f7c2fcce08188a99d38dcb3,Stage 1 JavaScript dropper (MB308992219AE.js),phishing-to-xworm-v7.1,Xworm-Analysis
+sha256,9ef39965263531f35203eea0a1924181264cf6d7f3832d939cd532d5fad77a2d,Stage 3 XWorm V7.1 payload (.NET),phishing-to-xworm-v7.1,Xworm-Analysis
+sha256,2175df45893a994d82868e142b7d591a4c08efa764a53d9f45ec0fc32b4e5582,Startup folder LNK (persistence),phishing-to-xworm-v7.1,Xworm-Analysis
+ip:port,109.248.150.234:1012,XWorm C2 (raw TCP; SIA RixHost AS203557),phishing-to-xworm-v7.1,Xworm-Analysis
+ip,77.232.184.7,Sending mail server (mail.lpltd.ru),phishing-to-xworm-v7.1,Xworm-Analysis
+domain,mail.lpltd.ru,Sending mail server,phishing-to-xworm-v7.1,Xworm-Analysis
+email,ek@chaek.ru,Phishing sender,phishing-to-xworm-v7.1,Xworm-Analysis
+mutex,aGO284VKfQVe8Vup,XWorm mutex (also the config AES key seed),phishing-to-xworm-v7.1,Xworm-Analysis
+file_path,%AppData%\bin.exe,XWorm install path,phishing-to-xworm-v7.1,Xworm-Analysis
+file_path,%AppData%\Microsoft\Windows\Start Menu\Programs\Startup\bin.lnk,Startup persistence shortcut,phishing-to-xworm-v7.1,Xworm-Analysis
+sha256,196f53a2d6b267d8ea1e590e1a45d89797df3228fe9de435593df3daa94e8cf2,VBScript downloader,vbs-downloader,XWorm-RAT-Malware-Analysis
+url,https://shy-hall-9c09.cryptersandtoolsoficial.workers.dev/Pkjtb,Payload URL (Cloudflare Workers; dead at analysis time),vbs-downloader,XWorm-RAT-Malware-Analysis
+domain,shy-hall-9c09.cryptersandtoolsoficial.workers.dev,Payload host (Cloudflare Workers),vbs-downloader,XWorm-RAT-Malware-Analysis
